@@ -1,0 +1,21 @@
+{% extends "layout.jinja2" %}
+
+{% block content %}
+
+<style type="text/css">
+BODY{background-color: {{bgcolor}}}:
+</style>
+
+<div class="content">
+  <h1><span style="background-color:{{color}}" class="font-semi-bold">Pyramid</span> <span class="smaller">Starter project</span></h1>
+  <p class="lead">Welcome to <span style="background-color:{{color}}" class="font-normal">Adrian's Lab6</span>, a&nbsp;Pyramid application generated&nbsp;by<br><span class="font-normal">Cookiecutter</span>.</p>
+  <li><a href = "http://localhost:6543/color/blue">Click here for blue background</a></li>
+  <li><a href = "http://localhost:6543/color/black"> Click here for black background</a></li>
+  <li><a href = "http://localhost:6543/color/green"> Click here for green background</a></li>
+  
+</div>
+
+
+  <li><a href = "http://localhost:6543/form">Click here to change background to any color</a></li>
+
+{% endblock content%}
